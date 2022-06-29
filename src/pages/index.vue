@@ -20,12 +20,11 @@
   </pre>
   <SvgIcon
     name="btn-close"
-    color="#f00000"
     class-name="icon-50"
   />
   <SvgIcon
     name="home/Icon-community"
-    color="#0f00f0"
+    class-name="icon-80"
   />
 </template>
 
@@ -38,13 +37,14 @@
     color: #2c3e50;
     margin-top: 60px;
   }
-
   .icon-50 {
     width: 50px;
     height: 50px;
+    fill: #c9d7e1;
   }
   .icon-80 {
     width: 50px;
     height: 50px;
+    fill: #dd00dd;
   }
 </style>
