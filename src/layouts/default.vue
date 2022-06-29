@@ -4,7 +4,12 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    <router-view />
+
+    <router-view v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </main>
 </template>
 
@@ -25,5 +30,13 @@
   }
   nav a.router-link-exact-active {
     color: #42b983;
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.2s;
+  }
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
   }
 </style>

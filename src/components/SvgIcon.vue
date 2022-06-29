@@ -6,11 +6,7 @@ const props = defineProps({
   },
   className: {
     type: String,
-  },
-  color: {
-    type: String,
-    default: "#333",
-  },
+  }
 });
 const svgName = computed(() =>
   props.name.includes("/") ? `#${props.name}` : `#/${props.name}`
@@ -22,7 +18,7 @@ const svgClass = computed(() =>
 
 <template>
   <svg :class="svgClass" aria-hidden="true">
-    <use :xlink:href="svgName" :fill="color" />
+    <use :xlink:href="svgName" />
   </svg>
 </template>
 

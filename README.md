@@ -30,17 +30,11 @@ This template should help get you started developing with Vue 3 in Vite. The tem
   <SvgIcon name="demo/btn-close" />
 ```
 
-- 如何改變顏色
-```html
-  <!-- 請先將 SVG 本身的 fill="currentColor" 屬性拿掉 -->
-  <SvgIcon name="icon-phone" color="#0f00f0" />
-```
-
 - 如何改變寬高
 ```html
 <template>
   <!-- 利用class來改變寬高 -->
-  <SvgIcon name="btn-close" color="#f00000" class-name="icon-50" />
+  <SvgIcon name="btn-close" class-name="icon-50" />
 </template>
 
 <style>
@@ -51,7 +45,6 @@ This template should help get you started developing with Vue 3 in Vite. The tem
   }
 </style>
 ```
-
 
 ## 使用者程式碼片段
 
@@ -64,5 +57,33 @@ This template should help get you started developing with Vue 3 in Vite. The tem
     "<style></style>",
   ],
   "description": "vue init template"
+}
+```
+
+## VS code 安裝 Prettier
+```
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.disableLanguages": []
 }
 ```
