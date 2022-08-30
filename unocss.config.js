@@ -7,7 +7,7 @@ import {
   presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
-  colors,
+  presetWind,
 } from 'unocss';
 
 export default defineConfig({
@@ -30,6 +30,7 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
+    presetWind(),
     presetIcons({
       scale: 1.2,
       warn: true,
