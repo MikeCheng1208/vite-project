@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%;
+  
+}
+img {
+  display: block;
+}
+a {
+  cursor: pointer;
+}
+input,
+textarea {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
