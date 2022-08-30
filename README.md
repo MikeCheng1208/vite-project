@@ -14,7 +14,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 - Router 自動生成，放入 `page/` 資料夾內
 - 全域資料管理 pinia
 - vite-SSG
-- 使用 UnoCSS [DOC](https://uno.antfu.me/)
+- 使用 windicss
 
 
 ## SVG 使用
