@@ -6,9 +6,8 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import Layouts from 'vite-plugin-vue-layouts';
 import Pages from 'vite-plugin-pages';
+import WindiCSS from 'vite-plugin-windicss';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
-import Unocss from 'unocss/vite';
-
 export default defineConfig({
   resolve: {
     alias: {
@@ -37,12 +36,11 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/],
       dts: 'src/auto-components.js',
     }),
-    // https://github.com/antfu/unocss
-    Unocss(),
     createSvgIconsPlugin({
       iconDirs: [path.resolve(process.cwd(), 'src/assets/svg')],
       symbolId: '[dir]/[name]',
     }),
     eslintPlugin(),
+    WindiCSS(),
   ],
 });

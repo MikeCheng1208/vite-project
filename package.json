@@ -22,20 +22,20 @@
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/eslint-parser": "^7.17.0",
+    "@vitejs/plugin-vue": "^3.0.3",
     "@vue/test-utils": "^2.0.0-rc.21",
     "babel-preset-vite": "^1.0.4",
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.7.1",
-    "@vitejs/plugin-vue": "^3.0.3",
-    "vite-plugin-eslint": "^1.6.0",
-    "unocss": "^0.45.13",
     "unplugin-auto-import": "^0.11.2",
     "unplugin-vue-components": "^0.22.4",
     "vite": "^3.0.7",
+    "vite-plugin-eslint": "^1.6.0",
     "vite-plugin-pages": "^0.25.0",
     "vite-plugin-svg-icons": "^2.0.1",
-    "vite-plugin-vue-layouts": "^0.7.0"
+    "vite-plugin-vue-layouts": "^0.7.0",
+    "vite-plugin-windicss": "^1.8.7"
   }
 }

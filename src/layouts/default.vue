@@ -6,8 +6,8 @@
       alt="Vue logo"
       class="logo"
       src="@/assets/logo.svg"
-      width="125"
-      height="125"
+      w="125px"
+      h="125px"
     />
 
     <div class="wrapper">

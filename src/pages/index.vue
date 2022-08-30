@@ -19,12 +19,15 @@
     >
       {{ name }}
     </h1>
-    <div
-      w-100px
-      h-100px
-      bg-red
-      hover:w-200px
-    ></div>
-    <button @click="setName">Click</button>
+    <div></div>
+    <button
+      bg="blue-337ab7"
+      text="white 20px"
+      w="200px"
+      h="50px"
+      @click="setName"
+    >
+      Click
+    </button>
   </main>
 </template>
