@@ -197,50 +197,6 @@ const windi = {
     }),
     plugin(({ addUtilities }) => {
       const newUtilities = {
-        '@keyframes skeleton-loading': {
-          to: {
-            'background-position-x': '-20%',
-          },
-        },
-        '.skeleton': {
-          'background-color': '#ededed',
-          background: 'linear-gradient(100deg, rgba(#fff, 0) 40%, rgba(#fff, 0.2) 50%, rgba(#fff, 0) 60%) #ededed',
-          'background-size': '200% 100%',
-          'background-position-x': '180%',
-          animation: '1.3s skeleton-loading ease-in-out infinite',
-        },
-      };
-      addUtilities(newUtilities);
-    }),
-    plugin(({ addUtilities }) => {
-      const newUtilities = {
-        '.no-scrollbar': {
-          '-ms-overflow-style': 'none',
-          'scrollbar-width': 'none',
-          '&::-webkit-scrollbar': {
-            display: 'none',
-          },
-        },
-        '.scrollbar': {
-          '&::-webkit-scrollbar-track': {
-            'border-radius': '10px',
-            'background-color': '#fff',
-          },
-          '&::-webkit-scrollbar': {
-            width: '5px',
-            height: '5px',
-            'background-color': '#fff',
-          },
-          '&::-webkit-scrollbar-thumb': {
-            'border-radius': '10px',
-            'background-color': '#e84989',
-          },
-        },
-      };
-      addUtilities(newUtilities);
-    }),
-    plugin(({ addUtilities }) => {
-      const newUtilities = {
         '.flex-center': {
           display: 'flex',
           'justify-content': 'center',
